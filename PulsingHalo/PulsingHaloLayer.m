@@ -129,7 +129,7 @@
     
     CAKeyframeAnimation *opacityAnimation = [CAKeyframeAnimation animationWithKeyPath:@"opacity"];
     opacityAnimation.duration = self.animationDuration;
-    opacityAnimation.values = @[@(self.fromValueForAlpha), @0.45, @0];
+    opacityAnimation.values = @[@(self.fromValueForAlpha), @1.0, @0];
     opacityAnimation.keyTimes = @[@0, @(self.keyTimeForHalfOpacity), @1];
     
     NSArray *animations = @[scaleAnimation, opacityAnimation];
